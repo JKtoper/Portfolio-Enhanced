@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+  <title>JK Villasanta</title>
+  <link
+    rel="icon"
+    href="https://lh3.googleusercontent.com/Os-6s3jCl5Et8eS3hyOct4G_B43hj51zOyIBTqX0OmPtFzE5Lw6Sa3Pol0yZ_P41kQLuekYVJZzjqZSTFs1RxVds1o5W3wkA9OYt9BdFFU1sebtAHV-x7EOnvH5SPoWdMTLuh7m8y4HgyyHOjTSdPGdyz70dPmN4wh89OIEOK-H9aHB3TeHD2Qi0j-eb7lngPN20wqZ88LRXYgkZ4HTlReRFzsLVYYdsDV30LDU9pWwTxO-Fes3MMMfo2--a13YkniIeQ0qux89TwZSPUbL3T3yA6LeOmh-ZmuN13nSjnkc4VC4XaHNs2aJ66ZogIz26bHEZeCKK72layI3zV1ylVzOF0_xYGVdIiHKO4msfR8tWvmyg47Ijzrp2Zh2_AmzQs19WDanPwVCIlSxA-qQaG3KtcTVSGitZ1Y5V3FlNFdoPMIG_wnjQLRlc_GoCXRCSe4uPrL75ZVZxgkh_QAIbVWUbuu611S2u8-BcUxbPOJN8rC8CLqZWU6v40utd14R4O41b_2ReN9plMdmcziJB8mrf71S7Fcvxga7WN389nPhr1oJn--v_-nI2nvvlPC_2qkAhLg8eTIvXA5Pqg9Ma86Gt_Ns2UGeCvfRPaj5NXW2MeCDdB_Shjv-tYDoUejAbZo4y-KxCdGHiFppFyyJIncTTSjdZW4lmg4FDQPCuB80Od2TWPDjq48jO2tZf4qWfsHGoDZnTOIPXJ5vRw8BhJekR1LEs3XMn0Sgja0rr8rNUQ8B7UWY2TrMPZ7J9RWNQLVjYp05JsO5pBTctwdxfdvLwBEFYw8rcu8HRr1vIUDf60kSl3Jh5T_BeJGyT88dQJK_gxRDP0dovQkNHwlEdaZbPVyXR1wJRJZM_MvvFeHRfaoBMMEbB2KuOABbl1BENYWEHz8QQoEO6QVMDCfNRUI8_iYb4HQ=w749-h933-no?authuser=0"
+    type="image/icon type"
+  />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    `
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: rgb(11, 86, 66);
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px;
+    }
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0;
+      }
+    }
+  </style>
+  <body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <img
+        src="https://lh3.googleusercontent.com/Os-6s3jCl5Et8eS3hyOct4G_B43hj51zOyIBTqX0OmPtFzE5Lw6Sa3Pol0yZ_P41kQLuekYVJZzjqZSTFs1RxVds1o5W3wkA9OYt9BdFFU1sebtAHV-x7EOnvH5SPoWdMTLuh7m8y4HgyyHOjTSdPGdyz70dPmN4wh89OIEOK-H9aHB3TeHD2Qi0j-eb7lngPN20wqZ88LRXYgkZ4HTlReRFzsLVYYdsDV30LDU9pWwTxO-Fes3MMMfo2--a13YkniIeQ0qux89TwZSPUbL3T3yA6LeOmh-ZmuN13nSjnkc4VC4XaHNs2aJ66ZogIz26bHEZeCKK72layI3zV1ylVzOF0_xYGVdIiHKO4msfR8tWvmyg47Ijzrp2Zh2_AmzQs19WDanPwVCIlSxA-qQaG3KtcTVSGitZ1Y5V3FlNFdoPMIG_wnjQLRlc_GoCXRCSe4uPrL75ZVZxgkh_QAIbVWUbuu611S2u8-BcUxbPOJN8rC8CLqZWU6v40utd14R4O41b_2ReN9plMdmcziJB8mrf71S7Fcvxga7WN389nPhr1oJn--v_-nI2nvvlPC_2qkAhLg8eTIvXA5Pqg9Ma86Gt_Ns2UGeCvfRPaj5NXW2MeCDdB_Shjv-tYDoUejAbZo4y-KxCdGHiFppFyyJIncTTSjdZW4lmg4FDQPCuB80Od2TWPDjq48jO2tZf4qWfsHGoDZnTOIPXJ5vRw8BhJekR1LEs3XMn0Sgja0rr8rNUQ8B7UWY2TrMPZ7J9RWNQLVjYp05JsO5pBTctwdxfdvLwBEFYw8rcu8HRr1vIUDf60kSl3Jh5T_BeJGyT88dQJK_gxRDP0dovQkNHwlEdaZbPVyXR1wJRJZM_MvvFeHRfaoBMMEbB2KuOABbl1BENYWEHz8QQoEO6QVMDCfNRUI8_iYb4HQ=w749-h933-no?authuser=0"
+        style="width: 50%"
+        ,
+      />
+      <a
+        href="#home"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-home w3-xlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a
+        href="#about"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-user-circle-o w3-xlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a
+        href="#photos"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-camera-retro w3-xlarge"></i>
+        <p>PHOTOS</p>
+      </a>
+      <a
+        href="#design"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-eye w3-xlarge"></i>
+        <p>DESIGN</p>
+      </a>
+      <a
+        href="#video"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-video-camera w3-xlarge"></i>
+        <p>VIDEO</p>
+      </a>
+      <a
+        href="#blog"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-play w3-xlarge"></i>
+        <p>BLOG</p>
+      </a>
+      <a
+        href="#contact"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-envelope w3-xlarge"></i>
+        <p>CONTACT</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div
+        class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"
+      >
+        <a href="#" class="w3-bar-item w3-button" style="width: 25% !important"
+          >HOME</a
+        >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >ABOUT</a
+        >
+        <a
+          href="#photos"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >PHOTOS</a
+        >
+        <a
+          href="#design"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >DESIGN</a
+        >
+        <a
+          href="#video"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >VIDEO</a
+        >
+        <a
+          href="#blog"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >BLOG</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">Hello</span> It's me JK Villasanta
+        </h1>
+        <p>
+          I am a Professional freelancer Photographer, Graphic and Web Disgner.
+        </p>
+        <img
+          src="https://lh3.googleusercontent.com/jHJmV44Ww2pQwN4NXTpkrdRPyCT7vadClZSsKjtU_6LyE-kQo635uFC3kbk7Jl751PoTkaEqX_B37-2KkNrRa2MrlZcFTABi-keN5j9BecoBklyHEZkWIDii3M5GaRzoaINu0AtGPsZiuzDtlXYy5w4HmWVwvL3EEqUE2aRWXgjVSwA9lz1pdAgtuDxfo-_VJGO-EuXbhxRfoY8s4BZjDROO0nsv4ldqj2cfVeDJLGOhepWp6t-ohxs1y5Wujr2SBoxBjTTF9hFDPKYzwZoglwxCF5HmqvV2lEQ-XEn8iU3v7YnuqNacTCVDKxCpjjC5g7Bsu4yUe8ZQgrMcbs8RkJRV46iC8BoEIaBxuztfrtPtVRozRgepelObia_JzgvJQGH0Z20-OCPLyiEQ8T8IiKBO92q__wmCfV1kBHBjVu1cyi0O78SqUGT2uquLAVjM5kqNsr8Ou0pFFPq_YAsVKbRCB_FIing1Yus5fi65o2t3XKOBiewpwt9hjnRYXjjL9J_4BhVjh_oFZpvlVpWsvhq3YrCIiihzCP6XEslMF-_gGjXbq-6XUAQWz1zFRtIV-UYRkdCPkQpfEB9XEmwTnrUKyibVkTWCVhlAXxUs4uHIqNZLNrl2YFCDH6jJvwbzH-Q0E4OuLyVwuCHEeg2CJ0RwKeZ8mSjviAnnfVs3-7ohsI7i_t1IeE1ZQsO5RnfVO0-ua-eduoXLybj4hKeHLndEKoVuJU79e2x1ijMvtdgoWSBY135LKDzb9C8UjS8a9Bs5nrWepE7S7WKpPZGLBaAtgn2_bi10cabuMBPytHBTbO08tYvg1NGyOQpU8SlbD27sCcNUk1iZB1s13YbLXoJ_8wGrrbFA9dti_BBF0EFt5wOBkhuso5ve3O1zzrGtuQr9s-HY4NcxThlge0aXbGwC6-Qyug=w700-h933-no?authuser=0"
+          alt="JK Villasanta"
+          class="w3-image"
+          width="992"
+          height="1108"
+        />
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">My Name</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <p>
+          Hello my name is JK Villasanta aspiring graphic designer and photographer based in the Philippines. 
+          Designing and shooting products is such omnipresent component of today's world to an extent that it is truly a 
+          struggle to visualize one without it and by that I mostly elevate the products and services for my 
+          client who find themselves difficult doing visual communication. My portfolio mostly consists of coursework projects, 
+          briefs and to promote my services
+        </p>
+        <img
+          src="https://lh3.googleusercontent.com/oev7tJDNYAF3cdGHzOmTEZQ05dJ3fCCjzVRe9FR3Xj_HaBYGoO7pq6ie5Tut2nDKbyUvsEpIhdQekwlVPhrQuGKIaVLbzj98Myl_doCwY63sgUDqkmXJGCHvzwJZsZoRj4S3rEHE-slveiU8eGo1i0Py-z4C-kwlQUJd-SZYvcvZmjIhsEr0oevxi_EDhrXxa8E-ymvO4h5Vte2PkESDH3JRuwrpqIAHUYrRcfeQeM8NEmI4WnalWy8u5S7Op3XrLX7LlCZXKHsa113OuroBy79W8BSGfr43RNnjY0w4R0GROn24sc0q16cfz6uaDctiAjSyY_CwYQJT0YSBYS7OBX5pOof2JnWQS12p8I0xr_ad4yAFRqOvQHp4IqK08AebLy50OSlirNNj6o1PqRgXbBfuNMe_u0MdsJ1u_7uADEvhUaJrwVZYt2XH2v8xJaQ00R8HNAqPXBnmGuMN0DU0CXLRJNTVx1aCp-NkL2WbXqkqiigyKpgh7ZtfuySXJ4Fdusn0bvh08nHPH5MjnNaa0LYQ8mEQnAbuGNDzdKkEg2QXn1vS9hbOoXBIwuzNY3nGda3CsAyd6fkaM7K0XS3eLeVofVvASiq2MFHpDtqIU9iyHUo9FfvdVl3rHWb6osPXF5QKOYrxUpft-r7gE5zdTYLXVeYF1NE33IZv72Vml9FuEmdZU_mwjzI1UKtlNwJAfrljmO2Odtqw208Doddgs89a3PPkzXT4btqyZquMDIYyZfVDmoyxPLfynImY75kplHFdBwpwI9abvc5nKjM0T0oPGIQSLQrwYEXyASTxdM8GsPEXZrK4OVagQknI2JDId6Yr9OF2DLd4Hjlfzu2AWpZu-p8TqFt0WOLw-bpFzSitBXUzYwOMsjkNPEoF2XEA4fKewxuJSCvxtWiAZ1rsVGn4A7xZVg=w850-h220-no?authuser=0"
+          alt="my name"
+          height="100px"
+          width="500px"
+        />
+        <br />
+        <br />
+        <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+        <p class="w3-wide">Photography</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 95%"></div>
+        </div>
+        <p class="w3-wide">Web Design</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 85%"></div>
+        </div>
+        <p class="w3-wide">Design</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 95%"></div>
+        </div>
+        <p class="w3-wide">Illustrator</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 90%"></div>
+        </div>
+        <p class="w3-wide">Photoshop</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 70%"></div>
+        </div>
+        <br />
+
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">11+</span><br />
+            Partners
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">55+</span><br />
+            Projects Done
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">89+</span><br />
+            Happy Clients
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150+</span><br />
+            Meetings
+          </div>
+        </div>
+
+        <!-- Grid for pricing tables -->
+        <h3 class="w3-padding-16 w3-text-light-grey">My Services</h3>
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-third w3-margin-bottom">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Premium</li>
+              <li class="w3-padding-16">Web Design or Logo Design</li>
+              <li class="w3-padding-16">Only one revision</li>
+              <li class="w3-padding-16">-</li>
+              <li class="w3-padding-16">-</li>
+              <li class="w3-padding-16">
+                <h2>$ 15</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button
+                  class="w3-button w3-white w3-padding-large w3-hover-black"
+                >
+                  <a href=".html">Sign up</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-third">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Platinum</li>
+              <li class="w3-padding-16">Web Design or Photography</li>
+              <li class="w3-padding-16">Logo Design</li>
+              <li class="w3-padding-16">Only three revision</li>
+              <li class="w3-padding-16">-</li>
+              <li class="w3-padding-16">
+                <h2>$ 30</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button
+                  class="w3-button w3-white w3-padding-large w3-hover-black"
+                >
+                  <a href=".html">Sign up</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-third">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Exclusive</li>
+              <li class="w3-padding-16">Web Design</li>
+              <li class="w3-padding-16">Photography</li>
+              <li class="w3-padding-16">Logo Design</li>
+              <li class="w3-padding-16">Endless revision</li>
+              <li class="w3-padding-16">
+                <h2>$ 50</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button
+                  class="w3-button w3-white w3-padding-large w3-hover-black"
+                >
+                  <a href=".html">Sign up</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- End Grid/Pricing tables -->
+        </div>
+
+        <!-- Testimonials -->
+        <h3 class="w3-padding-24 w3-text-light-grey">Testimonials</h3>
+        <img
+          src="https://media.istockphoto.com/vectors/illustration-of-king-crown-in-monochrome-style-design-element-for-vector-id1358702071?b=1&k=20&m=1358702071&s=170667a&w=0&h=QcyLKvRBGDridwoSr9Q2llG_ieUqNd1WAYbwF1oiiqw="
+          alt="Avatar"
+          class="w3-left w3-circle w3-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="w3-large w3-margin-right">Valirians King.</span>
+          Restaurant Manager
+        </p>
+        <p>JK saved us from a web disaster.</p>
+        <br />
+
+        <img
+          src="https://inkspiredmagazine.com/wp-content/uploads/2021/12/Spade-Decorative-4.jpg"
+          alt="Avatar"
+          class="w3-left w3-circle w3-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="w3-large w3-margin-right">Hallark Arens.</span> President
+          and CEO at Hallark Corporation.
+        </p>
+        <p>No one is better and fab creative than JK.</p>
+        <br />
+
+        <img
+          src="https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-rose-flower-one-line-vector-minimalism-drawing-style-png-image_694137.jpg"
+          alt="Avatar"
+          class="w3-left w3-circle w3-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="w3-large w3-margin-right">Pithosto Rose.</span> Business
+          Owner.
+        </p>
+        <p>
+          With my creative thinking and perfect execution of JK it was isntant
+          kill. We can't wait to collaborate with JK again.
+        </p>
+        <!-- End About Section -->
+      </div>
+
+      <!-- Portfolio Section Photos -->
+      <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">My Photos</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half">
+            <img
+              src="https://lh3.googleusercontent.com/V82HpHJCixhvYJZn2UeKadX5m9yEyZZhIo7FUPH-PjBD8zQRkmZNmCEK64DywENR5vmMs37Mn1p16j8ZLAtO-6dMbSZjQJd5YnvIC7gPMzPbXcgJlp5U55e0d0WSUZ2ypDv7W3BQqMBFJn9HOroyMp-_hTkdUSS7I9wqvriy3Gx_YMU_rZ2GjsgD0l0hywaVoztsmLqzBSF9XLUkLpaCzYXB5j_Idb1T-2pSWHpfzV7AM4C4zNy39UkrjjYaz4ye_5Mx7JdZfxkp5PEyPH1lSwEqV2ZH4jdOnseEtid5BVXmB7mBn9R7_IrPSBYvpkte1jzbfM3EHn0ajYJfJ6epNX8y1VmKjGG9C77mUEVhPUNdD6HUIWBa1i0XGKqGTUMbUwuZL3DerH-DoqyuzOWbdJBhl2KdPh_52G4RQLuXd2TlVN7wNxk-xYQ4LDnejly9nNT0ZX_jQuoRaZx2QOQsgZPYwHYhm8VQD3LvJVkVQwu55Uo_4lwQcRZvrICau6c60N5R-kJpkCz0rxOaSgGgUTFFogo3P_qPvTzCRqyx9IN9k353Ve9p-Q6O-T9Arz5L4Bl9qlDoikdW0wCh8HEanvc2JopAXtN8xpccMLfFSm9YW_p_9NEIr0RbWhTWQ98MdA9Sw0qPAzEyVi50GsXjyPjY_ZaSdgsoXk9rY4D0J2r4GwrzXlJ-CNG1F395TNc0YQd5u0f90Gw59TSGK5JMBZ86ZHdVSWHt_JDdLWASXfbVacH8EWvuwBvxlDl44PdxrUSxF93wqrrR7xpBwWayINQTA7IOSNde0f0XNtBMTjj-7tFtN__Jv-w8s9hqFVajuOPNVaoST0PWW1UXlFhi1YyRXeLFJMVdUKGwsrSQMDkHuli2zwkF-ZwmHMX2OxptT4Du9QE__6hWkw1SAF6kx4Jw6s38Cg=w700-h933-no?authuser=0"
+              style="width: 100%"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/4ot_mFVpVSbVJxzmcue7eP23T57Di17sfn1BhxHhgY8iBgSXxoPDoYp_UwzyZuXCF7K3Nta1TqWd9lrFEFbnqsnOnkMkfUmdo-DP1r0wIc0LgsxhUrF8jrtNsujopm48LF153E1j3ykrx2zYdeAvVahY3tYYiKlL_5U1qHZ7vR_z5302x0AmLBGs_F4HYaLvB5O__Y3TWLqQJNSiQ5hw55_FLhZsAKE7DKE1OY3f0hEToZmmunuFaYBqsVI9_944J4R3ATbz3LGulaBsEciTxBD5Vvo00yVTjdeH_ng2gKFPyqAq9Eav_PDexkcicUGiSM709NhPGhGbt6ArQRr-e5usepx-eCX7-OvTWkV5CAibm7t75ZfeGybCQhKQuApKcqoZj7PBOpp0_jioAYkC33P90F6S_jwLqzH7CxwpUWmnaEmEEFlH0hffqvVTCjJo-XBEtvq0uEdvK_3dWMBH30W8vt3jUuyt9Tw90JDDksYhnWekuN7WIkJ8sk-ZLpdkiS3SrZi4B0GJGjEdDmq9yqGh2caQZTs7v2tJao14qah8DD-WtsbQzY0rB0y2dnuXeiskga0UXRkA02knoR_ZxVOvTpaNRhzX2ysXUPyUTWAfSHBlt4If9mv7TR4u5Tj65pkJBjKooGDDQK3_FkBIHLUrBabIP0yrdC2Ncv_gdXfdfJ7kYQRTQ6rW2pjS8f-jBnB90dDOfayDhzcH3Uggjft5LB-UZN03ztXFjBuLkeFcrNeIGuFfzDYIkRmpFpHBb8Rm42T6vi0bWU-kUgZXf82KBssXM6jrtLOjBM7nLhUmAr1-XZG27ek4ZYYTwbS0tldEXRr7kCqXa7e9mXquh2R0FIhNuvRe8Y9I6aH-2gJ3PLCNmMgN_wTUJFrQZWyyTx_USUIn_YH0PT7mOuZy-bJ_C9DSqQ=w700-h933-no?authuser=0"
+              style="width: 100%"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/IXVeKiXB6hP1THo0q-I16jgFifbVbzQyPiZZzav7ttv3-_kg54Dt7J2Zexc0PBsAwEdG9TrqAV-1jRmi-fq98qY-hUy36CR1JWOwMLmsjr1hAEF4AsW4inxH7sB3wW4qizEG9kzZFLh161YaEuwc5O885rSUIWJNJeV76O_uyxKewR9wxvy8FBew7yffW7_V47SHLZ1UAbdgYvTO8jcVovlCl2NbSs8HQJlYqIaOhwarDajerUJLhpuRsaFpUdCkF38cLx_xOZCBDQaAoucy94njtDFV_zdRODaOXMTaDemH-PX_v_8FM82GEd19drijnk1DRVoUv-ihdfAIT1PqSBj6e1EcsrHu0d2KUacGTUvzh538qcK_3keawUaYXXPwg9QkhnChxCQW6zBjja5xPDR4lr2T1Gq7xigalGgdeKPQWjTEYR8v-ZVFvbZh72qIC-GbB6OS98qAx6JebTJ6Xk5V7DS4QGb9HoOGM3bL2_H86Y3arBtCnPsYDZLRg3hv1-wtXzCtrrYfP3V-Jx6mwzXz27sFPSfb09BrMv8xhL_frE1ZLQ_K3ptgIWTmScLoAOrlyFbuAt3nOaYxMd_1Ex2E01_GB5tsbg6ReEC6awrB_xgF25-7FlEnBA8VPRnEuXHbbj1SqrowG1SXWUgCcNccfiPsr9HKB4-Q5lyxYxOH3aJMaMw1mvz8EZLkN-skNjhfY8zzJDCo9Dk4znCEcKb90tXKRmgSj3r5mx7yrAT_tgfO57YO3zZe-TLe7ZPuSYvqxlqh7XtqNN61d2QDWa673IdCXkZV8RBUR5uco9czOdPakb5IGwN8eYcnGE-B7ybo9_QQqPrd5Vgk5eYcsy5p3KDx5okt3cwDSQnN1rfaj31elm5h7DHsUh_aqXuP2Ts6pOFTfPrcLH0b2_jz4Oa6OvrDig=w1367-h933-no?authuser=0"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="w3-half">
+            <img
+              src="https://lh3.googleusercontent.com/QZQvBtezRgk-zrsBL_w-cWdlp5pQbDK3Oz6T3_QxZN5K2JTQhQ9sQW_d46i2i_krVjxoqUktlSGP4M79Rs1e8bDYPjNdHP9-hBLBmW4-putPww6Q4he7Gk8oYSiI6H2TWesAnbSm9HoSqfrEEAGLhCoOLIfnJBuMLbd1vBeLy1n9Q28A820t-gFtgtTE3b0Uaow34ge3Rs4EwN6cvxKn7s94XN8KfyAUziXL2eOm3_LGDHGJF7o45KhU_Ei013wUOWzdF9K9sQIWlH9p9e4vjV2wbiEXL66kXSffdykct0HLMpge2mZAy25xVVrAWooQHIAGSeVjNCjYylQ62uQ0M199qYONt-CpnJCNPyjcjtZW9gduZ2V-VhX16cBQbqLZgM-iex5vge5tueDS3mq4MioWpsXbCyonfHMUYzdcVFycPK5RpIDQguetog2mVLjLjeqsebWqisvMU5i-gys3krYNXE7_lI9BjfqTxsUrGM8ZBVSk2TTLW0Lc9Hk5jn2o2gOxK4JQCyQoNKXUow7bgueZ7QlANb3iIzLn0ZkfrPv_iBV--i3DZoX-Rr1S3BibauLje8CMTHnMVEG_OnNHJQFDBdPdLgWeW27MuhNICVrSjIOZAW_yF4YYPy8kz5koiR9F1esgpYKOJVjxSME92ffO6FMqk1-gQ7astqrcZF3CuueiEeQ7QF67GQvMK33rk0vBuvTspVFxS9tFwLJcBBY5_hWpv6uLJw2SEb18P6wr79oxGhtxWRIg8BI1xIjOZfgPH39Vbm-OrjpohZPEH90esmjxRyXoxoRjFN4BfjatDVDsk8ajxLEq4oCDwciX5w7bN5v2qmAcCif5bR3I8IlMUC729j3OeZet2-0Pl9ndThschRTa3z90s73vPKl8Afdw-4KNvfnmRzLhACi8fGfZm9FbRQ=w1920-h875-no?authuser=0"
+              style="width: 100%"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/DpPfr0rCmkf2ZWKGmOVsDRmzXmYpfvuQYOU8RaKrCgKAfRtx_da03cMBcTlY6qZrSVhts8iDXn2iab6xvmW2BNSJ7OZUmngcOg7VWcImuObYyX0sPyQJJV5Pht-Qu9807NiZfPvIj0awXQcFA_OScA_vFUGNMgqOe97nbBqM27Ttd-QEqumSyJoMyTzYoZ8okvFo9d9WiiknVOSdpdgHBAQmc12D9yByWMjK0-OFKfFRfvwhqfRi-Ty8eC9ny7TRixamcvOeU3l6--tIrhhrbdnsmtLXyg1kGm3Dq2YpvKiRToApXpF9VVgkqDzWrjZJQzWSLoj41hHYib62GXsAm0Tlqg3qhPMxrdRuF6AZ7JWIV9qhf4W4sTlEhssZWUn7H8toI4RtdmwGKw4LeTqL5jQXCLrfi255-itkDLOG-uZzmRQQ75DrGfaI_xDowRdYyYRWRy1nPjGuXKRtUK3qgfIJ0akLGNO-cS4I1nhh2xMuR-F_0WTxPr9VVsSvtCLYv76Agu9NFLm-MyinAzaYsjxjBER4P39S2vmHEtGLmELfut2ZKGy_M-Z5BMHlpXHkHSQELlkGPAs7T786XQbZpQxqwH9CGMKSOXLTxPQCq33xMrPdGuBIYUeVYPe3gipWSHVOF8YSwgJmTwCBlymDZjKxxr02nhNrubYymQ-vl_ZnGz8zt7R0ODTdHZCemxwRmXw9JeKQ1IyA_sX8kDuOVfD3K5f_efU7gcC8b0tII-6hGjEkapgBLywX9W2qwvcOru4-HMnRnApbUzCidByRh9lkvem0T-biTaV7gh2bKU6OGi-CwJA8eFGZsYZKDD4VX60cURGTidmFW810H9vuPDpFk8IlyVasA--wQWqRqSwOIalF0jm0ZgY9yFwvqyZIrnJJbAd6Z1AKh02HRcX4F8xKWCSAEg=w700-h933-no?authuser=0"
+              style="width: 100%"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/HCIKFGr-XePk6e7hjZ6A3cubqTlKUAADA4K78V1SeONNOSIN7fqcRmKSvRcatscyu6xsAaqacu6qM9_OGCl40POJ1IgdIEZ-zInIcxS1PdYbRTCE3JI3BF4hpIXPRdzLzrQUpnDtBNIkUus_5Z1wqP3M1A-vWUjIXfWdSA0NEpJWWsnuD0M69IBxgHY6GTMSSk90ndH7ifqSKCepE0xmaTAVmy5CAY3glFIaGt7cnhA8HzORt85agYih2QCp4z1iEjbx82mOrXtbPdLu4KSPh9BSpXlLGfD0RUFNJrTaXDjH9BDGvW6rhlxV1ZA13qGL0L5rceyovQusQq5fZe7TZxe-hi1zH8X-p6PdmZ8N73AN7Rgpm_OZO1bIqqggqQRcFzXkX1Q-HE5VlFE-znqRDPld27FAm1E0HzAtYTrU61zY6jrDUyimcSMyvxLnjCrUhaFyQu00VoBaHWvRuzzkdD6RMbLA4qFtlvp3SD36i4OXo7bPhY7pSj7BpEbY50xximpAYSuyQJ1Uxi2klvB1w2hMoEXONlqAyopVnnfjO0pvjTBGwNuVa17NVGcCDPimh3Y2kzPtkY1BMw3iB7726uzULywKO3yre3YB58D7zW8Ex6GfgnOv-vXQnRIsZeV7k5_4w7rHgjgkQN-dkVgxF7Rhfn18_HC-Tp-nYVIrILzMa-TPP6AMfTKhSq7kOPCKHWHCxg1aHeztONrrwEqEDI24-nSqcW0YlmvllAHDs6N1KYAKAPoRiHcfyI9M5AXiDFwJfyKcVGmu1D8tF1PCoEGaWVtgB99o4WcncWoT-nOAGCl5pGdnFnwRkYTdAEzyTl4jw0unFITvUebDhZXgC4dir8J7-DXJjqsI_HFdlKoZkxxaoyHR98alXpO1Y_1-fVgpazleZRpPAFwo8meCmjlwZ9O_dA=w1085-h934-no?authuser=0"
+              style="width: 100%"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/V8GWS9WMYHplMLHSZFy6pZSrcmAr-Kt75q9J_S9uD4vWY8Sz6gtmTHidzo9TFo4_Vg6f7B5IyVvEYagmgnnuqeRO1sIbEwvB0YTNrvxSBDbbOrU2ry8QGcsejPeOnJI1T_8u2GVmIb05Ctga279stVH8kY60_rzl9BdmSLuW3dLJ9yRO0DX0tacdyJK56u9PCnIywSx-CPzI_2rCC8DyJtU7a7bZLZY7PrJf3gqINYGkq16tOUDtRHDUWdo5qfY_SwjfDbLi1tl1UoiUKsmLogWJKv8LOrB1MYN7YbNNqzL4o73oLbVcvN6bpicQDbeV27iilGLh3UCPvWQD2ftd49Px_40SOfjGB3sxwqnL-3NQgcoFXyk-Jc93n88AaqGZRRvg8cTr_F5yUSuIM2zmXEYzUsVyeQqUp8l4OgcgGkYBFR0iBkOe0SnMYNR_Y3mQuaMY_xdPT9brSMXnVnrWVhCAxTbAWLX74KpkyY68KTFUWA7Dz5-SmUrFgiltC56V-nGQ3qNQP6EnHf3I_eK8hMKYzDgSMrz5C4VJn1ZSWxfYKZh86bvgWvfEFcyO6g5oERoiRdB_md_ZfbFtH9u39VK1JY9JiRX9-zGOx-CKZbWT8YJaMu9B4rdwIKDVG5XFmRtqbnBan5-DiXuoT1UeRPRIeC-t-4eb0cNIBq1617TiYKU7-o7ZLjiS20_X2rF4ehPKIJl3vfRaOdYx2qWC-ktNs_BN3Oh370Zc0uVMtlZcCWKcb1bhwBNoEjJwKHAnOt_LM8Q9MWYw7EixiOAAKdomjfUQCB3iht5-E23d7wnuULMJK7QGVU9mXGifyD0P8UFrV-ng4DcZTHpZ9RL3jv7lIKZHbXMRAalG_ftKlgMg5qc6MGwwgq2V-8ejiAv9Imx3x1p233tjmrG0-Uqxdef0e-XbGg=w1229-h933-no?authuser=0"
+              style="width: 100%"
+            />
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+      <br />
+
+      <!-- Portfolio Section Design -->
+      <div class="w3-padding-64 w3-content" id="design">
+        <h2 class="w3-text-light-grey">My Design</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <!-- Grid for Design -->
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half">
+            <img
+              src="https://lh3.googleusercontent.com/LBApHONEV7AA2sELAVOyLNRnEupNo7GdmJF7mBcxSqUiyrMAiXNldY0ekkG6THPuU66NOFB8Je5FucMguoVgUvRXjKxy_lspLEDu8oaqFst3LYhKBOebmNHnHdljCx2vpbYXWRT6e0w-w_DZIKLeynCIvLFU1eYUX-gTRps5kZH7P8v7P6arYIiJWRsEecaj2zBOpwevETWeWgCuUys9hXvu5YkaqIFxSJNKHPeZk3lJz6a9Pl9BObdy3ipwajfhEt-_wsxkgoOPJu6LFXeVIIAzxDGFlEDMxEHCdTCoGVfJUTkSncPfh4MqHyqdtoBeEOZB_V9AgIGH3fyzqK-RjpdIxcVjXLT_bhTc0AO4SJW8v_iPPCPBOmLUBpoXNZHjNG-9ApMPEnnCZaVpx5YpzJUS9VqY47xeJgasi1gdaPIOVp_J9Bge_hrvCGP6T9zHLcP33429jkCg0jVMpMwDG3CAqWh1vyqd3HX24bwgSC3Y6W0_-CBoFwMv6jiGvzAJVwTVyuGdNnZKwXVQeC2TsUKWNPafBUvhp0VaoRJ49yBblJ1Aq2ppHa5HmRPAkkdZmCZlMIyI7Gm5DgjJ0cV8UyLFITRQZESPA37s9fBOX9ShvmhiI4CSEIwX6Xwum6qVNMeol3MfYsAL2hn12w1sR3X6HaTzy4y7zCM_N-eYMcm3Bq2woFTJ2xUv1ah4MJD4bC4AUqM-ZXE4IxRusIbiGAWpl7t4hnp7066sK0gzfW48lXGjKvz1AVVDpB9-rgShj1T6Iw92hqtcSm8G1_JeuD2Bj-Ljs0RUfxGZXbZ5e2qNzUbx_Vp8c9OFdlBLhsIAc-F5gUrfUI9Dhz93IsOWBJXGZcVkxNuutdEKGeOIAdy9YpGYZw5I6VeqqaoNMn3Zbj589_tEJGv-DHqGudy5KI0KEfsOdw=w1659-h933-no?authuser=0"
+              style="width: 100%"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/FutUgGjuYz6emCwmLr9zVCAp3tn8MCF8Nm3aR65euApFXo7i2KcnEAQaRSQFTyHTzNn7vZ8uUypyJitKSOH_CIRvbyy-S6Kvn1mQOSvgfTlX42RyItBlsl1MoNX7iYAs8l153FZDstrvhOvdtV_zErQu1S3ko8urPS3JFPkdJZ17H3Kz2XoSY3st_qBhh8Xg8x_KhA_NIJKTgZPlqbZ4BJQVc4VehDhbAgA-HRk_7GmfTjBqLW4KZHC-zKtsvITo_96A77oTD95B93GmUoJiEBKYsxyKnIZFV5tzlu5aM1BcYlwkEk_f-G4D5wFI79M1lbx5V3VMdhAUTUEg9L9SAVhc4Ku0fQMfFt9Ua6qEkYU6Qo2WIQClD0AyZcKpUByBB6-9OWYtfWO25XT8XZmOe-aumxfr7seBty3KELJMnW0idEExMj3M7FglcFLy4328leSN47evdF_sy8kUerhVVW81bPFXYboLBX2J2sn7n9Ycj2lkCAv56gLltBXcB9kgWry0iAQFT3Ezwjhymq9u5b73pNgKlQnqMT_M3HFQDHX27TynKVPc4nWZMLuV1-pWMrspsidBeM61V_npCkyHua0NE7s-JxsrgMFXvw5elwp7KMuOHnjx5uwtzXMQHSpzdA_dnrDPakLuDqocHHjOyc44GvzKmMGvMKhgTz3zYzhdgH_VX62Hda_tgwsG_zhuorD-h5-rh2tFbC9ujB5b4L43PEMZi9P1S2ILFtoT19D9iDEz3GZ56bSOI_zztY3HR-80Xf_lsJ_y3N0JW4jLrkIGGHC6jCQMfqrYz7EPcK069tVa4_7QudgC6nkg7fGgAuQZBkjTlNWuHezAQREBrWFuoeKVrfKpCHGW5TOvlaqNYn5P3e-5CEE2d4ucykDHuwQ1m8ga4-s5S4QxMsZ7bm4IWQLODg=w1659-h933-no?authuser=0"
+              style="width: 100%"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/HZmgvL0y8VMTypODPq_rRcJAfk8V9p8sd9FpKfc5nhx8jxiavqtfSyH9VBBniHSj6wM1IEGRcd5EDNpiAPOru9peBtbsMGVWQUhOjl6vxGRoQ-N4TxM_9dICdJtx61VCxuar-j9PSapdNd7sfPfaeafY2qaDeEIRv9u5VvM6bnhNVjCctf-3fPqPdA2Nc5n0X1MEMiRFcD6voDKOySD_7dLWSBR_uVhoEfu1CjIoc7uJxcOdLBRsMsWqM6AxwazdGymrvQLnmvu0XiULrIDlCEtd0xzBOnkSaY4evxXHjk_tKZK0GmOCPUS8FZsza8kV2Hdfi8TkAuxxJzeYfp6itp0MU5X2wmdQM0S7nKc2KEFy-YPw4gwxYQyUz7MWbC5Q2YO9OMZ8Upu4JxRYzUQU-PNZ-N-5xByn0ouJICPRRJ4M7r308QWws6JkvsN0Eo4Q2g2W6xLGOylKC6UMqe5DkmdDJNovIIgdgTetOwlNc_XezqeUAoxhbdEDaEGK-r1lxTvl-3hZOEy7Wof9npx16RAcDBSfkTpkwSQIkb1JoINhyifKuKRwlp3sABOt_6uS18w5JAPiIX8r8SHEz8nwBqtj8crFKlYal3My-NT52-j1o4xFX-D6_syFlE9u5-m8JEMRq45YlnOlBd18m_YTq0S79SM08uIiCjf_NSan0icpw0JW8BUeEC3BHWkvmEGl_WHzz-uyMnmRWqV6Z_NN2yQWDE1xmUrfEQkUUt5ZipeQ2a4xFD62XsNOGS8WkwjSLFAGZ1sS2ql7N2ifW_YcvqE6vdbqJRFTw2cb9sencke-q9nD3yzwriYf1B6tJ59STwIWP_jkbhpiCSg774Y4H3UdY7QQoEGLyZ-Oh4eakoWGMws7ROzHx7WpBNm5Ba6ap9Q9zehCG9on0ndOZnX2Yo8d0RJgbw=w610-h933-no?authuser=0"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="w3-half">
+            <img
+              src="https://lh3.googleusercontent.com/JjKHEWuZHg90xvLNJG_8XC3ZufcdkhfhBDMwxR35dm1bikWRGbSg6FLgHpb_lwsNWhphvMRXVWxtAe-mDkc3AYFwcfstuf-Qn1appZ0lN0IjBmCR5M8jBqq1WeNoWh8omUozt86JmBa84B4xCcmWojG9rHDR7oATZScp6CxK0-VhCbylxakpnaptBM1KdRu1g5Po_8kiM9zD8nk9B_ZiPzvaz1aIJ9MiT4lGlZ43IIZE0tnGQ5U-M0l7JyxXObIY8Y8EZwR1OTSPWS4gTbXT91Z_9L2acBb7Y8kUWvUyUFawSdsab3Z5QIBzbkkZbxl_rqw-826t4gG8DbMBZkC91ZwokdxgZjAQKvoL_cu4II9s6-eqtpDdnQ2czPV3hak4eXntL8pvu7kHynFmiPF93GzvnICrGzGmKsIun_QkNbP1FC3hzZTDkXqDCV9Be1Y6xwIkStDdGD14pp29pX6qAXys5523m5kjiy5vp6bAIrh5NH1NCq9xaKQ_0llFGP53rEUoaV8FBu8lSsVmrHSiHkT9gusvcp8PwTRQ83wxJ-_F4xjMlrrA2StTYq5f36dP2s7EnzPUlBmoE9S95DawmQKRZOOd5XGiBgeWpB8lF4BU_HhZbrH2b5sVRcedsaGDNlsBtJXZ7wxUW7wx6oSW_QInCtRo_NLGZdEI61MYlMxAf9zopuU9UbBRteDthGjiZGjfXIimpvOYqcHJvBWJYOr3TNYgDpXdNl1PB3WIoHv99OwPyMayW3SpqYIwscNHyuSyPfDIgWnQsnK7elGUM_8i3SULfQJV5gq7RxNCDj8O1biISYHvSnUSU5JbFyFVsesP2GWT9TbVSaUT1n7dTP7f4VF3dIl-TBCbX934VZcFdN1UVbKfC0sdZErp1Rb0gxF8RrreEIQM3bhy-AIqbR7XEKNDIg=s879-no?authuser=0"
+              style="width: 100%"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/DsAtyJrpDNs-b_hb0g7bxUoYFJiMl8Kl-26SHAoGyP66E65eLREJGvKopAgA2OhT0BV_yaTa6VKIEqyy18HdgwTOx5wWz6b4DUCCa-oKJluJxJQK_LDcPAVgr_8SCgSiJySF45X4mVdD0gikyVqk0-2u_v77K71tfu_iNJXQShJrl6V6q9VkattsX8TmUghAoAGzYSbjd4xltm8AUokraRrmiMLLTGxWVW2fO8t69w6zZMVN1mbEb6szxKaE_O0Oytn_ShLN7vQfmhgwV488lYEDLJplZFnliCFGnLAp0z6MpCTCspAmknBm8mNOQBZLj-3n8zSTYUXW0yMnJcwz4HpRsieuJ-owkWbozKYRI91-RtRKgrxPLcwE13_hfZSzWoJ9nQegW95289QdkIEeYG7SDsQIUn3QZP1APIfRCPgBWEKFM9ToOMF6siKxjd-z9_jZkLAn8fsJg_i_pe5yB6KHsmzI6cB1SWOKPCyTtaAvHgNuRIFUfo26mrLPoXlnS41sTTq0_iJnfZuHJaSU2Feu5kTChN4JH4m0Nlc-Gxpuy-qfkow3aQATFLY47I2zT5f6mm4uQ1nS86J4Jyix0dS2HySATYlU0-pdK-aMKbYYo6FzvQkH_Pt9Ivl_UU8WfAEVBPIu_7dv4RSCr7k2nYviGebHMErXkulnn5aLVgHjVdkhC_gwwpDd8awrceS0Y_ml7Rqg4kvzc-oXGiKLUMiakIjoN4EdmAbz2hCD8Q4NIBVWLIp3brKy1vnmaGTjxTksVjk9-qRrCf3ICXu88JQlW17CaRF69HFWQB2L9hcrHLqwLi4kR-wsT1OAFFCooEeROXxVsLTG86jxFsOuctMQUpJycwjZm7iIKwf7_B-TglWqJ9OVM3g82ZTkAb79IzDmjQrG1fiuuyQ1-vcZ8eDuexQxYA=w1145-h933-no?authuser=0"
+              style="width: 100%"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/1GdtCXh95Z5fpdekZuZ-aPdYNdgc-hQoUW_4SxhhFgAv01UDwwa9JckMZsiYT6xW48xjoZBEve3hT5TyneZTb-PIPDvlyK49xFdxwHMvWM-UY9bmvluoyC7crheZEBgko6AQdCVdJaVa_B0vK3pPAoZ0_bWWUniSXKa3Mavsr2joj4zCEdsX2F1SMcRIGDSYa0oVjowDK5hHBBGRlrrocQA4AiEWgqh1rWXcSatQq61TwL2vYPcIOK7hdPWc-K8IKjMlDlcpioWMXrYv6i6k8RIEPCu00s6CulcbNAZdlUT9ec0ernu4M5Wu-01qbCYR6WvfbQmL0sGgHBW-7eOnSPn_el2EoBKm4Ch-Tn_AOL4b7sUdSdmXcDQHLvds_YGXRAqSyZPo_IjdE7iCVQIBCCpqbDIdhtb8MEp4kttEwIdmUlVdFr9SImHGe9Pvx9tnYIN1pmt92aWYvOVbeZUKHFM97mKzmQCRLt3KHD1GkBAL1Glu3Cg7DCXvn2pTlGOeAcoU7iNG0GPXXHNkDGa99nykmJGvdrRsdpD0HLYh2v6CRssW-5PfW7HW59Q3FbBeY73mMT6Swp2Snpvy9kXfaDiRHTNwtlvCe5K5b1B5X1ng7GTXvv5wKW4Y3W3vvY3DH4pyTPeye-MVwdRDYYBiXFQF5qU4Obb8agz_w9jgkUSKY_Y--hrHBcCHlvEu8owpMEz5bOKu0asIAOIQcWt8BoIoRIMhPLWSj4zVV5vC55_QMAtBdYzXRBZgyJvSgahOs4doeoiXe0IX63iojAjIwX4l2Vkh_VH7o97v3l2jIEOkk2pJr7CYNs2HLiI0EZ5YX2wfmmxq4dt4cTMj5qktaFUU4K2gmUz6hcOpbqqyCUaS1kvVraxI-JZywMGOs8Va_IhK1eMexkGlh6nhZ8T6lJPt7OeLrQ=w1320-h933-no?authuser=0"
+              style="width: 100%"
+            />
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Portfolio Section Video -->
+      <div class="w3-padding-64 w3-content" id="video">
+        <h2 class="w3-text-light-grey">Video</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <video width="1000" height="500" controls autoplay>
+          <source src="FINAL 42MP4.mp4" type="video/mp4" />
+        </video>
+
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Portfolio Section Blog -->
+      <div class="w3-padding-64 w3-content" id="blog">
+        <h2 class="w3-text-light-grey">Blog</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <!-- list of blog -->
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-one w3-margin-bottom">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-24">
+                <a href=".html">Importance of White Balnce</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-one w3-margin-bottom">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-24">
+                <a href=".html">How important branding in Business</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-one w3-margin-bottom">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-24">
+                <a href=".html"
+                  >Ways to Boost Community Engagement on Your Website</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-one w3-margin-bottom">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-24">
+                <a href=".html"
+                  >What beginners need to know about starting a website</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-one w3-margin-bottom">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-24">
+                <a href=".html">Define your target market</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End of list of blog -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-section">
+          <p>
+            <i
+              class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Manila, Philippines
+          </p>
+          <p>
+            <i
+              class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Phone: +63933 000 0000
+          </p>
+          <p>
+            <i
+              class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            >
+            </i>
+            Email: kristophertoper@gmail.com
+          </p>
+        </div>
+        <br />
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button
+              class="w3-button w3-light-grey w3-padding-large"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-large">
+        <p class="w3-wide">For more exclusive updates Follow me on:</p>
+        <a href=".html"><i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a></i>
+        <a href=".html"><i class="fa fa-instagram w3-hover-opacity w3-xxlarge"></i></a></i>
+        <a href=".html"><i class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i></a></i>
+        <a href=".html"><i class="fa fa-pinterest-p w3-hover-opacity w3-xxlarge"></i></a></i>
+        <a href=".html"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i></a></i>
+      </footer>
+
+      <footer class="w3-center">
+        <a href="#" class="w3-button w3-black w3-margin"
+          ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+        >
+      </footer>
+      <br />
+      <br />
+
+      <!-- End footer -->
+
+      <!-- END PAGE CONTENT -->
+    </div>
+  </body>
+</html>
